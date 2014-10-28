@@ -1,0 +1,70 @@
+#navigationbar{
+    margin-bottom:50px;
+}
+
+#movies{
+    padding-left:100px;
+}
+
+img {
+    width: 300px;
+    height: 450px;
+    box-shadow: 0 0 30px black;
+}
+
+#movieTitle{
+
+    margin-top: 10px;
+    font-weight: bold;
+    /*background-color: grey;*/
+}
+
+#ratingsPanel{
+    width:300px;
+    /*background-color: red;*/
+}
+
+#releaseDate{
+    /*background-color: pink;*/
+}
+
+#numericRating{
+    /*background-color: yellow;*/
+}
+
+
+#starRating{
+    /*background-color: green;*/
+}
+
+/*html{*/
+    /*background-color: black;*/
+/*}*/
+
+
+.col-md-4 {
+    margin-top: 50px;
+}
+
+body {
+    /*text-align: center;*/
+    width:100%;
+    height:100%;
+}
+
+#reviewStats{
+    height:100%;
+    position:fixed;
+    top: 8%;
+    right: 5px;
+    float:right;
+}
+
+
+.glyphicon-star-empty{
+    color: #78bdeb;
+}
+
+.glyphicon-star{
+    color: #78bdeb;
+}
