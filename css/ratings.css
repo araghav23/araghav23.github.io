@@ -16,31 +16,11 @@ img {
 
     margin-top: 10px;
     font-weight: bold;
-    /*background-color: grey;*/
 }
 
 #ratingsPanel{
     width:300px;
-    /*background-color: red;*/
 }
-
-#releaseDate{
-    /*background-color: pink;*/
-}
-
-#numericRating{
-    /*background-color: yellow;*/
-}
-
-
-#starRating{
-    /*background-color: green;*/
-}
-
-/*html{*/
-    /*background-color: black;*/
-/*}*/
-
 
 .col-md-4 {
     margin-top: 50px;
@@ -53,18 +33,15 @@ body {
 }
 
 #reviewStats{
-    height:100%;
+    height:85%;
     position:fixed;
-    top: 8%;
+    top: 10%;
     right: 5px;
     float:right;
 }
 
 
-.glyphicon-star-empty{
-    color: #78bdeb;
-}
-
-.glyphicon-star{
+.glyphicon-star-empty, .glyphicon-star{
+    cursor:pointer;
     color: #78bdeb;
 }

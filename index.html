@@ -14,7 +14,7 @@
         <div class="container-fluid">
 
             <div class="navbar-header">
-                <a class="navbar-brand" href="#">Moviee Verdicts</a>
+                <a class="navbar-brand" href="#">Movie Verdicts</a>
             </div>
 
             <form class="navbar-form navbar-left" role="search">
@@ -26,9 +26,12 @@
 
             <ul class="nav navbar-nav navbar-right">
 
-                <li><a href="#" ng-click="sortCriteria='rating';reverse=!reverse">Rating <span class="glyphicon glyphicon-sort"></span></a></li>
-                <li><a href="#" ng-click="sortCriteria='releaseDate';reverse=!reverse">Release Date <span class="glyphicon glyphicon-sort"></span></a></li>
-                <li><a href="#" ng-click="sortCriteria='title';reverse=!reverse">Title <span class="glyphicon glyphicon-sort"></span></a></li>
+                <li><a href="#" ng-click="sortCriteria='rating';reverse=!reverse">Rating <span
+                        class="glyphicon glyphicon-sort"></span></a></li>
+                <li><a href="#" ng-click="sortCriteria='releaseDate';reverse=!reverse">Release Date <span
+                        class="glyphicon glyphicon-sort"></span></a></li>
+                <li><a href="#" ng-click="sortCriteria='title';reverse=!reverse">Title <span
+                        class="glyphicon glyphicon-sort"></span></a></li>
             </ul>
 
         </div>
@@ -60,11 +63,16 @@
                     Rating: {{moviesCntrl.getNumericRating(movie.rating,movie.releaseDate)}}
                 </div>
 
-                <div id="starRating">
-                    <span
-                            ng-repeat="star in moviesCntrl.starRatings"
-                            ng-click="movie.rating=moviesCntrl.getRating(star,movie.releaseDate)"
-                            ng-class="moviesCntrl.getStarStyleClass(star,movie.rating)"></span>
+                <div id="starRating" >
+                    <span href="#"
+                          id="star"
+                          data-content=" This is the body of Popover" rel="popover"
+                          ng-repeat="star in moviesCntrl.starRatings"
+                          ng-click="movie.rating=moviesCntrl.getRating(star,movie.releaseDate)"
+                          ng-class="moviesCntrl.getStarStyleClass(star,movie.rating)"
+                          >
+
+                    </span>
                 </div>
 
 
@@ -74,22 +82,16 @@
     </div>
 
     <div id="reviewStats" class="col-md-3"></div>
-    <!--<div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>-->
 
 </div>
 
-
-
+<!-- added jquery as a bootstrap dependency...did not use it anywhere-->
 <script src="lib/angular.min.js"></script>
 <script src="lib/jquery-2.1.1.min.js"></script>
-<script src="lib/bootstrap-3.2.0-dist/js/bootstrap.js"></script>
+<script src="lib/bootstrap-3.2.0-dist/js/bootstrap.min.js"></script>
 <script src="lib/highcharts.js"></script>
-<script src="lib/angular-google-chart-gh-pages/ng-google-chart.js"></script>
+<script src="lib/highcharts-3d.js"></script>
 <script src="scripts/ratingsapp.js"></script>
 
-<script>
-
-
-</script>
 </body>
 </html>
